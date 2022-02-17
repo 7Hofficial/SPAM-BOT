@@ -1,6 +1,6 @@
 
 
-from .. import SPAM-BY-7H, SPAM-BY-7H2, SPAM-BY-7H3, SPAM-BY-7H4, SPAM-BY-7H5, SPAM-BY-7H6, SPAM-BY-7H7, SPAM-BY-7H8, SPAM-BY-7H9, SPAM-BY-7H10, SUDO_USERS
+from .. import UstaD, UstaD2, UstaD3, UstaD4, UstaD5, UstaD6, UstaD7, UstaD8, UstaD9, UstaD10, SUDO_USERS
 from telethon import events
 from time import time
 from datetime import datetime
@@ -36,16 +36,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@SPAM-BY-7H.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H2.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H3.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H4.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H5.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H6.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H7.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H8.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H9.on(events.NewMessage(pattern="/ping"))
-@SPAM-BY-7H10.on(events.NewMessage(pattern="/ping"))
+@UstaD.on(events.NewMessage(pattern="/ping"))
+@UstaD2.on(events.NewMessage(pattern="/ping"))
+@UstaD3.on(events.NewMessage(pattern="/ping"))
+@UstaD4.on(events.NewMessage(pattern="/ping"))
+@UstaD5.on(events.NewMessage(pattern="/ping"))
+@UstaD6.on(events.NewMessage(pattern="/ping"))
+@UstaD7.on(events.NewMessage(pattern="/ping"))
+@UstaD8.on(events.NewMessage(pattern="/ping"))
+@UstaD9.on(events.NewMessage(pattern="/ping"))
+@UstaD10.on(events.NewMessage(pattern="/ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()

@@ -19,7 +19,7 @@ import os
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import SPAM-BY-7H, SPAM-BY-7H2, SPAM-BY-7H3, SPAM-BY-7H4, SPAM-BY-7H5, SPAM-BY-7H6, SPAM-BY-7H7, SPAM-BY-7H8, SPAM-BY-7H9, SPAM-BY-7H10, SUDO_USERS
+from .. import UstaD, UstaD2, UstaD3, UstaD4, UstaD5, UstaD6, UstaD7, UstaD8, UstaD9, UstaD10, SUDO_USERS
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -27,30 +27,30 @@ for x in SUDO_USERS:
 
 
 
-@SPAM-BY-7H.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H2.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H3.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H4.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H5.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H6.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H7.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H8.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H9.on(events.NewMessage(pattern="/spam"))
-@SPAM-BY-7H10.on(events.NewMessage(pattern="/spam"))
+@UstaD.on(events.NewMessage(pattern="/spam"))
+@UstaD2.on(events.NewMessage(pattern="/spam"))
+@UstaD3.on(events.NewMessage(pattern="/spam"))
+@UstaD4.on(events.NewMessage(pattern="/spam"))
+@UstaD5.on(events.NewMessage(pattern="/spam"))
+@UstaD6.on(events.NewMessage(pattern="/spam"))
+@UstaD7.on(events.NewMessage(pattern="/spam"))
+@UstaD8.on(events.NewMessage(pattern="/spam"))
+@UstaD9.on(events.NewMessage(pattern="/spam"))
+@UstaD10.on(events.NewMessage(pattern="/spam"))
 async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
-        SPAM-BY-7H = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(SPAM-BY-7H) == 2:
-            message = str(SPAM-BY-7H[1])
-            counter = int(SPAM-BY-7H[0])
+        if len(Ustad) == 2:
+            message = str(Ustad[1])
+            counter = int(Ustad[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             await asyncio.wait([e.respond(message) for i in range(counter)])
         elif e.reply_to_msg_id and smex.media:
-            counter = int(SPAM-BY-7H[0])
+            counter = int(Ustad[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             for _ in range(counter):
@@ -58,7 +58,7 @@ async def spam(e):
                 await gifspam(e, smex)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(SPAM-BY-7H[0])
+            counter = int(Ustad[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             await asyncio.wait([e.respond(message) for i in range(counter)])

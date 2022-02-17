@@ -2,7 +2,7 @@ import glob
 from pathlib import Path
 from SpamBots.utils import load_plugins
 import logging
-from . import 7H-Spam, 7H-Spam2, 7H-Spam3, 7H-Spam5 , 7H-Spam6, 7H-Spam7, 7H-Spam8, 7H-Spam9, 7H-Spam10
+from . import UstaD, UstaD2, UstaD3, UstaD5 , UstaD6, UstaD7, UstaD8, UstaD9, UstaD10
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
@@ -19,32 +19,32 @@ print("Successfully deployed!")
 print("Enjoy! Do visit @CHAT_INJECTOR7H")
 
 if __name__ == "__main__":
-    7H-Spam.run_until_disconnected()
+    UstaD.run_until_disconnected()
     
 if __name__ == "__main__":
-    7H-Spam2.run_until_disconnected()
+    UstaD2.run_until_disconnected()
 
 if __name__ == "__main__":
-    7H-Spam3.run_until_disconnected()
+    UstaD3.run_until_disconnected()
     
 if __name__ == "__main__":
-    7H-Spam4.run_until_disconnected()
+    UstaD4.run_until_disconnected()
 
 if __name__ == "__main__":
-    7H-Spam5.run_until_disconnected()
+    UstaD5.run_until_disconnected()
     
 if __name__ == "__main__":
-    7H-Spam6.run_until_disconnected()
+    UstaD6.run_until_disconnected()
 
 if __name__ == "__main__":
-    7H-Spam7.run_until_disconnected()
+    UstaD7.run_until_disconnected()
     
 if __name__ == "__main__":
-    7H-Spam8.run_until_disconnected()
+    UstaD8.run_until_disconnected()
 
 if __name__ == "__main__":
-    7H-Spam9.run_until_disconnected()
+    UstaD9.run_until_disconnected()
     
 if __name__ == "__main__":
-    7H-Spam10.run_until_disconnected()
+    UstaD10.run_until_disconnected()
 
